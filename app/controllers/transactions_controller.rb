@@ -10,15 +10,6 @@ class TransactionsController < ApplicationController
   def show
   end
 
-  # GET /transactions/new
-  def new
-    @transaction = Transaction.new
-  end
-
-  # GET /transactions/1/edit
-  def edit
-  end
-
   # POST /transactions or /transactions.json
   def create
     @transaction = Transaction.new(transaction_params)
